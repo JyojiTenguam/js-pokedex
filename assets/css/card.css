@@ -1,0 +1,168 @@
+/* Estilo geral do card */
+#pokemonCard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Nome e número do Pokémon */
+#pokemonCard h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Imagem */
+#pokemonCard img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* Informações básicas */
+#pokemonCard p {
+  margin: 5px 0;
+}
+
+/* Estatísticas */
+ul.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+ul.stats-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+ul.stats-list li span.stat-name {
+  width: 100px; /* largura fixa para os nomes */
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+ul.stats-list li span.stat-value {
+  width: 40px; /* largura fixa para os valores */
+  text-align: right;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 12px;
+  background: #ddd;
+  border-radius: 6px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.3s ease;
+}
+
+/* Evoluções */
+.evolution-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.evolution-card {
+  flex: 1 1 120px;
+  text-align: center;
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.evolution-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Tipos */
+p, .type {
+  text-transform: capitalize;
+}
+
+.type {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 4px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.weaknesses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.weakness {
+  padding: 2px 8px;
+  border-radius: 12px;
+  border: 2px solid; /* a cor será definida por cada tipo */
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.type.fire { background-color: #FDDFDF; color: #f08030; }
+.type.water { background-color: #DEF3FD; color: #6890f0; }
+.type.grass { background-color: #DEFDE0; color: #78C850; }
+.type.electric { background-color: #FCF7DE; color: #F8D030; }
+.type.ice { background-color: #E0F5FF; color: #98D8D8; }
+.type.fighting { background-color: #E6E0D4; color: #C03028; }
+.type.poison { background-color: #F0DEFF; color: #A040A0; }
+.type.ground { background-color: #F4E7DA; color: #E0C068; }
+.type.flying { background-color: #F5F5F5; color: #A890F0; }
+.type.psychic { background-color: #FFD6D6; color: #F85888; }
+.type.bug { background-color: #F8F5DE; color: #A8B820; }
+.type.rock { background-color: #D5D5D4; color: #B8A038; }
+.type.ghost { background-color: #EDE0FF; color: #705898; }
+.type.dragon { background-color: #97b3e6; color: #7038F8; }
+.type.dark { background-color: #D6D6D6; color: #705848; }
+.type.steel { background-color: #E0E0E0; color: #B8B8D0; }
+.type.fairy { background-color: #FCEAFF; color: #EE99AC; }
+
+/* Link de voltar */
+#pokemonCard a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#pokemonCard a:hover {
+  text-decoration: underline;
+}
+
+.gender.male {
+  color: #2196f3; /* azul */
+}
+
+.gender.female {
+  color: #e91e63; /* rosa */
+}
+
+.gender.unknown {
+  color: #888; /* cinza, para desconhecido */
+}
